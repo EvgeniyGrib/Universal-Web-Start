@@ -1,0 +1,204 @@
+.first:before
+  content: ''
+  height: 475px
+  width: 100%
+  position: absolute
+  top: 0
+  background-color: $dark
+  z-index: -1
+.first
+  position: relative
+  padding-top: 30px
+  &-news
+    display: flex
+    padding: 25px 0 30px
+    margin-bottom: 15px
+    background: #30363D
+    border-radius: 10px
+    &__item:nth-last-child(1)
+      border-right: none
+    &__item 
+      display: flex
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: #fff
+      padding: 0 25px
+      border-right: 1px solid #4B5157      
+      &_text
+        display: block
+        width: 154px
+        max-height: 100px
+        margin-right: 15px
+        overflow: hidden
+        -webkit-line-clamp: 4
+        text-overflow: ellipsis
+        align-self: center
+      &_img
+        width: 65px
+        height: 65px
+        align-self: center
+
+// RECOMENDED
+
+.recomended
+  padding: 15px 0
+  display: grid
+  grid-template: 570px / 76.9% 23.1%
+  &-images
+    display: grid
+    &__food
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/img/recomended-food.jpg)
+      background-position: center center
+    &__cars
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/img/recomended-cars.jpg)
+      background-position: center center
+    &__movies
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/img/recomended-movies.jpg)
+      background-position: center center
+    &__nfl
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/img/recomended-nfl.jpg)
+      background-position: center center
+    &__tech
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/img/recomended-tech.jpg)
+      background-position: center center
+    &__man
+      display: flex
+      margin-bottom: 144px
+      &_info
+        display: flex
+        flex-direction: column
+        margin-left: 10px
+        justify-content: center
+      &_name
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.85
+      &_hobby
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        opacity: 0.4
+    &__destinations
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #4592FF
+    &__title
+      font-family: Roboto Slab
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: #FFFFFF
+      margin-top: 25px
+      width: 598px
+    &__more
+      display: flex
+      align-items: center
+      margin-top: 39px
+      &_dontplay
+        margin-top: 44px
+    &__button
+      +button(22px,27px)
+      margin-right: 30px
+      &_img
+        margin-left: 9px
+    &__play
+      display: flex
+      align-items: center
+      &_icon
+        cursor: pointer
+      &_info
+        display: flex
+        flex-direction: column
+        margin-left: 10px
+        &_span
+          font-size: 14px
+          line-height: 20px
+          color: #FFFFFF
+          opacity: 0.85
+          // cursor: pointer
+        &_time
+          font-size: 12px
+          line-height: 15px
+          color: #FFFFFF
+          opacity: 0.4
+
+  &-image.is-active
+    display: block
+  &-image
+    display: none
+    border-radius: 10px 0 0 10px
+    grid-column: 1
+    padding: 55px 
+  &-info
+    display: grid
+    grid-template-rows: 60px 100px 100px 100px 100px 110px
+    grid-column: 2  
+    background-color: #fff
+    border-radius: 0 10px 10px 0
+    &__recomended
+      padding: 20px 25px
+      font-size: 14px
+      line-height: 20px
+      display: flex
+      align-items: center
+      letter-spacing: 0.7px
+      text-transform: uppercase
+    &__item
+      cursor: pointer
+      border-top: 1px solid #D9DADB
+      padding: 17px 30px 17px 25px
+      position: relative
+      letter-spacing: 0.1px
+    &__item.is-active:after
+      content: ''
+      position: absolute
+      border: 10px solid transparent
+      border-right: 10px solid #F5F5F5
+      left: -19px
+      top: 50%
+      transform: translateY(-50%)
+    &__item.is-active
+      background-color: #F5F5F5
+    &__item.is-active:nth-last-child(1)
+      border-radius: 0 0 10px 0
+    &__text
+      font-size: 14px
+      line-height: 1
+    &__recomended
+      grid-row: 1
+    &__food
+      grid-row: 2
+      &_play
+        
+        transform: translateY(20%)
+        margin-left: 2px
+      &_title
+        color: #3BBDC4
+        +recomended-title 
+    &__cars
+      grid-row: 3
+      &_title
+        color: #6E99AE
+        +recomended-title 
+    &__movies
+      grid-row: 4
+      &_title
+        color: #AC8EE3
+        +recomended-title 
+    &__nfl
+      grid-row: 5
+      &_title
+        color: #FFA34D
+        +recomended-title 
+    &__tech
+      grid-row: 6
+      line-height: 1.3
+    
+      &_title
+        color: #3DC47E
+        +recomended-title 
