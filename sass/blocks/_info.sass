@@ -4,7 +4,11 @@
   padding: 15px 0
   margin: 30px 0  
   height: 270px
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(/../img/info_flower.jpg)
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+  position: relative
+  &__img
+    +backgroundImg(270px)
+    width: 1520px
   &__title
     font-family: Roboto Slab
     font-style: normal
