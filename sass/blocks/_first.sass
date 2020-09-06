@@ -50,20 +50,42 @@
   &-images
     display: grid
     &__food
-      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/../img/recomended-food.jpg)
-      background-position: center center
+      position: relative
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35))
+      // background-position: center center
+      &_img
+        height: 570px
+        object-fit: cover
+        +backgroundImg
     &__cars
-      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/../img/recomended-cars.jpg)
-      background-position: center center
+      position: relative
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35))
+      &_img
+        height: 570px
+        object-fit: cover
+        +backgroundImg
     &__movies
-      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/../img/recomended-movies.jpg)
-      background-position: center center
+      position: relative
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35))
+      &_img
+        height: 570px
+        object-fit: cover
+        +backgroundImg
     &__nfl
-      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/../img/recomended-nfl.jpg)
-      background-position: center center
+      position: relative
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35))
+      &_img
+        height: 570px
+        object-fit: cover
+        +backgroundImg
     &__tech
-      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url(/../img/recomended-tech.jpg)
-      background-position: center center
+      position: relative
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35))
+      &_img
+        height: 570px
+        object-fit: cover
+        +backgroundImg
+        
     &__man
       display: flex
       margin-bottom: 144px
