@@ -33,27 +33,32 @@ let tab = function () {
 tab();
 
 // SLIDER
-
 var mySwiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
   autoplay: {
     delay: 3000,
   },
-
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
 });
+
+// BOOKMARK
+// let flag = (document.querySelector(".flag").onclick = function () {
+//   this.classList.toggle("flag-active");
+// });
+let bookmark = function () {
+  let flag = document.querySelectorAll(".flag");
+  flag.forEach((item) => {
+    item.addEventListener("click", function () {
+      this.classList.toggle("flag-active");
+    });
+  });
+};
+bookmark();

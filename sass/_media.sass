@@ -1,21 +1,458 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .header
+    &-top
+      &__search
+        &_input 
+          width: 80%
   .first
     &-news
       &__item
         &_text
           font-size: 14px
+  .recomended
+    grid-template: 570px / 75% 25%
+  .review
+    &-cars
+      &__img
+        width: 50%
+        top: 45px
+      &__comment
+        padding-left: 16px
+        &_username, &_text
+          font-size: 12px
+          line-height: 18px
+        &_text
+          margin-right: 13px
+    &-cats
+      &__title
+        padding: 25px
+    &-columns
+      &__title 
+        font-size: 18px
+        line-height: 21px
+      &__info
+        margin-top: 0
+        &_hobby 
+          font-size: 10px
+          line-height: 14px
+        &_name 
+          font-size: 12px
+          line-height: 18px
+      &__user
+        align-items: center
+        &_img
+          width: 35px
+          height: 35px
+  .info
+    &__title 
+      font-size: 36px
+      line-height: 45px
+  .news
+    grid-template-columns: 670px 260px
+    &-info
+      &__item
+        &_top 
+          margin-bottom: 10px
+        &_title
+          // overflow: hidden
+          text-overflow: ellipsis
+          height: 50px
+          font-size: 17px
+          line-height: 22px
+        &_text
+          display: inline
+          position: relative
+          height: 60px
+          font-size: 13px
+          overflow: hidden
+          text-overflow: ellipsis
+        &_img
+          object-fit: cover
+          width: 250px
+  .describe
+    &-slider
+      &__title 
+        font-size: 34px
+        width: 350px
+    &-wrapper 
+      grid-template-columns: repeat(2, 465px)
+    &-info
+      &__careers
+        width: 100%
+        &_title
+          font-size: 24px
+        &_title, &_text
+          z-index: 1
+          position: relative
+        &_img
+          z-index: 0
+          right: 5px
+          width: 240px
+      &__item_1
+        margin-right: 30px
+      &__item
+        padding: 20px 25px
+        &_text
+          font-size: 13px
+        &_title
+          font-size: 14px
+  .swiper-container 
+    width: 100%
+  .footer
+    &-list
+      grid-template-columns: repeat(5, 17%) 15%
+
+
+// ========== max-width: 992px ===========
 @media (max-width: 992px)
   .container
     max-width: 700px
   .header
     &-nav
       &__a
-        font-size: 12px
+        font-size: 11px
     &-bottom
       &__img
         &_span
           display: none
         &_universal
           width: 140px
+    &-top
+      &__search
+        &_input 
+          width: 50%
+  .first
+    &-news
+      &__item:nth-last-child(1) 
+        display: none
+      &__item:nth-last-child(2) 
+        border-right: none
+      &__item
+        &_text 
+          font-size: 14px
+          height: 75px
+
+        &_img
+          width: 55px
+          height: 55px
+  .recomended
+    grid-template: 570px / 70% 30%
+    &-image 
+      width: 490px
+    &-images
+      &__title 
+        font-size: 28px
+        width: 400px
+      &__play
+        width: 200px
+        &_info
+          &_span 
+            font-size: 13px
+    &-info
+    
+      &__item
+        padding: 10px 15px 10px 15px
+      &__recomended 
+        padding: 20px 20px
+        font-size: 12px
+        line-height: 16px
+  .review 
+    grid-template: 370px 170px 170px 100%/repeat(3, 30%)
+    &-card
+      &__title
+        width: 170px
+        font-size: 14px
+      &__text
+        width: 170px
+        font-size: 12px
+    &-columns
+      grid-area: 4 / 1 / 5 / 4
+      width: 555px
+      margin: 0 auto
+    &-cars
+      &__comment
+        &_text
+          height: 18px
+          overflow: hidden
+          width: 217px
+  .info
+    &__title 
+      font-size: 30px
+      line-height: 40px
+  .news
+    grid-template-columns: 100%
+    max-width: 95%
+    &-recomended
+      grid-area: 2 / 1 / 3 / 2
+      margin: 30px auto 0 auto
+      width: 555px
+  .describe
+    &-wrapper 
+      grid-template-columns: repeat(2, 350px)
+    &-info
+      &__careers
+        width: 100%
+        &_title
+          font-size: 24px
+          width: 280px
+        &_text
+          width: 180px
+        &_title, &_text
+          z-index: 1
+          position: relative
+        &_img
+          z-index: 0
+          right: 0px
+          width: 170px
+      &__item_1
+        margin-right: 30px
+      &__item
+        padding: 20px 25px
+        &_text
+          margin: 15px 0 10px 0
+          line-height: 16px
+          font-size: 12px
+          height: 50px
+          overflow: hidden
+        &_title
+          font-size: 13px
+          line-height: 16px
+  .footer
+    &-list
+      &__roster
+        &_item
+          font-size: 12px
+          line-height: 14px
+    &-info
+      &__date
+        &_link 
+          margin-left: 20px
+          font-size: 11px
+          line-height: 18px
+    &-copyright 
+      font-size: 11px
+      &__text
+        width: 540px
+// // ========== max-width: 768px ===========
+@media (max-width: 768px)
+  .describe
+    margin: 0 auto
+    &-wrapper 
+      grid-template-columns: 555px
+      width: 555px
+      margin: 0 auto
+    &-info
+      &__careers
+        margin-top: 30px
+        &_img
+          width: 260px
+          right: 30px
+  .subscribe
+    &__title 
+      font-size: 30px
+  .news
+    &-recomended
+      width: 100%
+@media (max-width: 700px)
+  .container
+    width: 88%
+  .first
+    &-news
+      flex-wrap: wrap
+      padding-top: 0
+      &__item:nth-last-child(1) 
+        display: flex
+      &__item:nth-child(odd)
+        border-right: 1px solid #4B5157
+      &__item
+        margin-top: 30px
+        border-right: none
+        flex-direction: row-reverse
+        width: 50%
+        justify-content: flex-start
+        &_img
+          margin-right: 20px
+    
+  .recomended
+    grid-template: 570px / 100%
+    &-images
+      display: none
+    &-info
+      display: none
+      grid-column: 1
+      &__item.is-active:after
+        display: none
+      &__item.is-active
+        background-color: #fff
+    &-mobile
+      display: block
+    &-information
+      background-color: #fff
+      border-radius: 10px
+      // padding: 10px 0
+      &__food
+        &_title
+          font-size: 12px
+          line-height: 15px
+          letter-spacing: 0.5px
+          text-transform: uppercase
+          color: #3BBDC4
+          margin-bottom: 5px
+        &_text
+          font-size: 14px
+          line-height: 20px
+          color: #4B5157
+      &__cars
+        &_title
+      &__movies
+        &_title
+      &__nfl
+        &_title
+      &__tech
+        &_title
+
+      &__recomended
+        border-bottom: 1px solid #D9DADB
+        padding: 10px 20px
+        font-size: 14px
+        line-height: 20px
+        display: flex
+        align-items: center
+        letter-spacing: 0.7px
+        text-transform: uppercase
+      &__item
+        display: flex
+        padding: 10px 0
+        margin: 0 20px
+        border-bottom: 1px solid #D9DADB
+        &_info
+          display: block
+          margin-left: 20px
+        &_link
+          display: flex
+          flex-direction: column
+      &__img
+        width: 120px
+        height: 80px
+        object-fit: cover
+        flex-shrink: 0
+      &__icon
+        &_play
+          transform: translateY(20%)
+          margin-left: 2px
+  .review
+    grid-template: 100%/100%
+    &-cars
+      grid-area: 1 / 1 / 2 / 2
+      &__text
+        width: 210px
+    &-coffee
+      grid-area: 2 / 1 / 3 / 2
+    &-manufacture
+      grid-area: 3 / 1 / 4 / 2
+    &-popular
+      grid-area: 4 / 1 / 5 / 2
+      &__img
+        width: 100%
+        height: 100%
+
+    &-stressful
+      grid-area: 5 / 1 / 6 / 2
+    &-lemon
+      grid-area: 6 / 1 / 7 / 2
+    &-cats
+      grid-area: 7 / 1 / 8 / 2
+      &__img
+        height: 350px
+        object-fit: cover
+    &-columns
+      grid-area: 8 / 1 / 9 / 2
+      width: 100%
+      &__title
+        font-size: 22px
+        line-height: 24px
+        letter-spacing: 0.5px
+      &__user
+        &_img
+          width: 50px
+          height: 50px
+      &__info
+        &_name
+          font-size: 14px
+          line-height: 18px
+        &_hobby
+          font-size: 12px
+          line-height: 16px
+  .info
+    &__title
+      width: 100%
+  .describe
+    &-wrapper 
+      justify-content: center
+      align-items: center
+  .footer
+    &-list
+      grid-template-columns: repeat(3, 33%)
+      grid-template-rows: repeat(2, 50%)
+      &__item1
+        grid-area: 1 / 1 / 2 / 2
+      &__item2
+        grid-area: 1 / 2 / 2 / 3
+      &__item3
+        grid-area: 1 / 3 / 2 / 4
+      &__item4
+        grid-area: 2 / 1 / 3 / 2
+      &__item5
+        grid-area: 2 / 2 / 3 / 3
+      &__item6
+        grid-area: 2 / 3 / 3 / 4
+  
+
+
+
+// // ========== max-width: 576px ===========
+@media ( max-width:576px )
+  
+  .header
+    &-top
+      &__subscribe
+        display: none
+      &__search
+        &_input 
+          width: 100%
+    &-bottom
+      &__info
+        display: none
+      &__img
+        &_universal 
+          width: 230px
+          margin-right: 80px
+    &-nav
+      &__ul
+        display: none
+  
+
+// // ========== max-width: 320px ===========
+@media ( max-width:320px )
+.footer
+  &-list
+
+    &__item1
+      grid-area: 1 / 1 / 2 / 2
+      &__item2
+        grid-area: 2 / 1 / 3 / 2
+      &__item3
+        grid-area: 3 / 1 / 4 / 2
+      &__item4
+        grid-area: 1 / 2 / 2 / 3
+      &__item5
+        grid-area: 2 / 2 / 3 / 3
+      &__item6
+        grid-area: 3 / 2 / 4 / 3    
+
+
+
+// // ==========---------- max-height: 500px ---------=========
+// @media only screen and (max-height: 500px)
