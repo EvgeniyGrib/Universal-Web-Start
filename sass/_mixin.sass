@@ -1,7 +1,7 @@
 =recomended-title 
   font-size: 12px
   line-height: 15px
-  display: flex
+  display: flex 
   align-items: center
   letter-spacing: 0.5px
   text-transform: uppercase
@@ -36,3 +36,16 @@
   height: $height
   object-fit: cover
   z-index: -1
+=titleFont($size, $line-height)
+  font-family: Roboto Slab
+  font-style: normal
+  font-weight: bold
+  font-size: $size
+  line-height: $line-height
+=textFont($size, $line-height)
+  font-family: Lato
+  font-style: normal
+  font-weight: normal
+  font-size: $size
+  line-height: $line-height
+  color: $textColor

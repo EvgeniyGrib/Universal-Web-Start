@@ -31,28 +31,25 @@ let tab = function () {
   }
 };
 tab();
-
-// SLIDER
-var mySwiper = new Swiper(".swiper-container", {
-  // Optional parameters
+new Swiper(".swiper-container", {
   loop: true,
   autoplay: {
     delay: 3000,
   },
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
 });
-
+new Swiper(".doc-slider__container", {
+  loop: true,
+  navigation: {
+    nextEl: ".doc-slider__next",
+    prevEl: ".doc-slider__prev",
+  },
+  keyboard: { enabled: !0, onlyInViewport: !1 },
+  effect: "coverflow",
+});
 // BOOKMARK
-// let flag = (document.querySelector(".flag").onclick = function () {
-//   this.classList.toggle("flag-active");
-// });
 let bookmark = function () {
   let flag = document.querySelectorAll(".flag");
   flag.forEach((item) => {
