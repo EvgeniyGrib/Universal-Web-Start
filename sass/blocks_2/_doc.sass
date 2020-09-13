@@ -3,7 +3,7 @@
   padding: 30px 0
   &-begin
     margin-left: 18.96%
-    padding: 31px 0 58px
+    padding: 31px 0 43px
     width: 623px
     &__m
       float: left
@@ -15,14 +15,14 @@
       &_text
         +textFont(18px, 30px)
     &__title
-      margin-top: 48px
+      margin: 48px 0 17px
       +titleFont(25px, 30px)
     &__text
       +textFont(18px, 31px)
-      margin-top: 29px
+      padding: 14px 0
   &-slider
-    width: 1140px
-    height: 555px
+    width: 100%
+    height: 100%
     margin: 0 auto
     position: relative
     border-radius: 10px 10px 0 0
@@ -45,7 +45,8 @@
     &__info
       display: flex
       justify-content: space-between
-      padding-bottom: 45px
+      padding-bottom: 33px
+      margin-top: -3px  
       &_text
         padding: 25px 35px
         border: 1px solid #D9DADB
@@ -79,19 +80,16 @@
   &-date
     margin-left: 18.96%
     position: relative
-    &__text:nth-last-child(2)
-      margin-bottom: 0
-      padding-bottom: 15px
-      
+
     &__text
       width: 623px
-      margin-bottom: 27px
+      padding: 13.5px 0
       +textFont(18px, 31px)
   &-comment
     display: flex
     position: relative
-    margin-top: 80px
-    padding-bottom: 45px  
+    margin-top: 63px
+    padding-bottom: 30px  
     &__quote
       position: absolute
       top: -20px
@@ -105,12 +103,13 @@
       font-style: normal
       font-weight: bold
       font-size: 25px
-      line-height: 30px
+      line-height: 31px
     &__user
       display: flex
       flex-direction: column
       z-index: 1  
       width: 165px
+      margin-top: 2px
       &_img
         width: 60px
         height: 60px
@@ -143,7 +142,7 @@
   &-show
     margin-left: 18.96%
     width: 623px
-    padding: 30px 0
+    padding: 31px 0 59px
     &__title
       margin-bottom: 26px  
       font-family: Roboto Slab
@@ -195,8 +194,8 @@
         margin-right: 11px
   &-card
     position: absolute
-    top: 134px
-    right: 286px
+    top: 147px
+    left: 683px
     width: 263px
     display: flex
     flex-direction: column
@@ -222,6 +221,7 @@
       line-height: 20px
       color: $textColor
       margin-bottom: 20px
+      width: 261px
     &__info
       display: flex
       &_icon  
@@ -248,7 +248,7 @@
       font-weight: bold
       font-size: 16px
       line-height: 25px
-      margin-bottom: 15px
+      margin-bottom: 13px
     &__info
       display: flex
       &_icon  

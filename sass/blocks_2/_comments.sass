@@ -1,0 +1,185 @@
+.comments
+  padding: 30px 0 30px
+  padding-left: 18.96%
+  display: flex
+  flex-direction: column
+  background-color: #fff
+  &__list
+    padding: 30px 0 60px
+    width: 750px
+  &__top
+    padding: 30px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_name
+      display: flex
+    &_title
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      margin-right: 11px
+      &_info
+        font-size: 40px
+        line-height: 50px
+        text-transform: uppercase
+        color: #939699
+    &_button
+      display: flex
+      align-items: center
+      background-color: #fff
+      border: 1px solid #D9DADB
+      border-radius: 20px
+      width: 163px
+      height: 40px
+      font-size: 14px
+      line-height: 20px
+      padding: 10px 20px
+      &_icon
+        margin-right: 11px
+        width: 18px
+        height: 18px
+  &__item
+    display: flex
+    border-top: 1px solid #D9DADB
+    padding: 20px 0 30.5px
+    &_answear
+      padding-left: 90px
+    &_user
+      width: 75px
+      height: 75px
+      margin-right: 15px
+    &_info
+      margin-bottom: 10px
+    &_name
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      margin-right: 10px
+    &_date
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &_text
+      font-size: 18px
+      line-height: 30px
+      color: $textColor
+      margin-bottom: 16px
+      width: 570px
+    &_bottom
+      display: flex
+      align-items: center
+      font-weight: bold
+    &_comment
+      &_img
+        margin-right: 5.75px
+      &_text
+        margin-right: 15.75px
+        font-size: 12px
+        line-height: 15px
+    &_rating
+      display: flex
+      align-items: center
+      &_digital
+        font-size: 12px
+        line-height: 15px
+        margin: 0 9px
+        color: #939699
+        &_green
+          color: #3DC47E
+        &_green::before
+          content: '+'
+        &_red
+          color: #FF4F52
+        &_red::before
+          content: '-'
+    &_dislike
+      transform: rotate(180deg)
+  &__load
+    cursor: pointer
+    width: 100%
+    height: 50px
+    border-radius: 25px
+    border: 1px solid #D9DADB
+    display: flex
+    align-items: center
+    justify-content: center
+    &_img
+      margin-right: 7.75px
+    &_text
+      font-size: 14px
+      line-height: 20px
+      font-weight: bold
+  &__user
+    width: 750px
+    height: 290px
+    background-color: #F5F5F5
+    padding: 30px 40px 35px 30px
+    &_title
+      margin-bottom: 14px
+      margin-left: 94px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+    &_body
+      width: 100%
+      height: 130px
+      display: flex
+    &_img
+      width: 75px
+      height: 75px
+      margin-right: 20px
+      &_arrow
+        margin-left: 8px
+    &_form
+      position: relative
+    &_textarea
+      width: 584px
+      height: 130px
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      padding: 15px
+      resize: none
+      background-color: #ffffff
+    &_form:before
+      position: absolute
+      content: ''
+      width: 0
+      height: 0
+      left: -12px
+      top: 28.2px
+      z-index: 3
+      border-top: 10px solid transparent
+      border-bottom: 10px solid transparent
+      border-right: 12px solid #D9DADB
+    &_form:after
+      position: absolute
+      content: ''
+      width: 0
+      height: 0
+      left: -10px
+      top: 29px
+      z-index: 4
+      border-top: 9px solid transparent
+      border-bottom: 9px solid transparent
+      border-right: 11px solid #fff
+    &_button
+      width: 115px
+      height: 40px
+      margin-top: 12px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 14px
+      line-height: 20px
+      font-weight: 600
+      color: #FFFFFF
+      background: #4592FF
+      border-radius: 20px
+      border: none

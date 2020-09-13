@@ -14,62 +14,120 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <div class="header-top__menu">
-            <img
-              class="header-top__menu_icon"
-              src="img/hamburger_menu.svg"
-              alt="Icon: menu"
-            />
-            <span class="header-top__menu_span">Sections</span>
-          </div>
-          <!-- /.header-top__menu -->
+    <header class="header lock-padding">
+      <div class="header-top">
+        <div class="header-top__menu">
+          <button
+            class="header-top__menu_icon menu-button menu__button navbar-top__menu-button"
+          >
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+          <span class="header-top__menu_span">Sections</span>
+        </div>
+        <!-- /.header-top__menu -->
+        <!-- ========== MENU ========== -->
+        <div class="header-top__menu_active">
+          <ul class="header-top__menu_list">
+            <li class="header-top__menu_li">
+              <a class="header-nav__a" href="#">News</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Science</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Opinion</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Life</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Travel</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Moneys</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Art & Design</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Sports</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">People</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Health</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Education</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top__search_active">
+          <img
+            class="header-top__search_icon"
+            src="img/search.svg"
+            alt="Icon: search"
+          />
+        </div>
+        <div class="header-top__search">
+          <img
+            class="header-top__search_icon"
+            src="img/search.svg"
+            alt="Icon: search"
+          />
+          <input
+            class="header-top__search_input"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+        <!-- /.header-top__search -->
+        <div class="header-top__subscribe">
+          <a href="#" class="header-top__subscribe_link"
+            ><img
+              class="header-top__subscribe_img"
+              src="img/image-header.jpg"
+              alt="Image: subscribe"
+          /></a>
 
-          <div class="header-top__search">
-            <img
-              class="header-top__search_icon"
-              src="img/search.svg"
-              alt="Icon: search"
-            />
-            <input
-              class="header-top__search_input"
-              type="text"
-              placeholder="Search"
-            />
+          <div class="header-top__subscribe_spans">
+            <a href="#" class="header-top__subscribe_subscribe"
+              >Subscribe Now</a
+            >
+            <a href="#" class="header-top__subscribe_price">3 month for $19</a>
           </div>
-          <!-- /.header-top__search -->
-          <div class="header-top__subscribe">
+          <div class="header-top__come">
             <a href="#"
               ><img
-                class="header-top__subscribe_img"
-                src="img/image-header.jpg"
-                alt="Image: subscribe"
+                class="header-top__come_img"
+                src="img/man.svg"
+                alt="Icon: man"
             /></a>
-
-            <div class="header-top__subscribe_spans">
-              <a href="#" class="header-top__subscribe_subscribe"
-                >Subscribe Now</a
-              >
-              <a href="#" class="header-top__subscribe_price"
-                >3 month for $19</a
-              >
-            </div>
-            <div class="header-top__come">
-              <a href="#"
-                ><img
-                  class="header-top__come_img"
-                  src="img/man.svg"
-                  alt="Icon: man"
-              /></a>
-              <a href="#" class="header-top__come_span">Sign In</a>
-            </div>
-            <!-- /.header-top__come -->
+            <a href="#" class="header-top__come_span">Sign In</a>
           </div>
-          <!-- /.header-top__subscribe -->
+          <!-- /.header-top__come -->
         </div>
-        <!-- /.header-top -->
+        <!-- /.header-top__subscribe -->
+      </div>
+      <!-- /.header-top -->
+      <div class="header-top__search header-top__search_visible">
+        <div class="header-top__search_visible_wrapper">
+          <img
+            class="header-top__search_icon"
+            src="img/search.svg"
+            alt="Icon: search"
+          />
+          <input
+            class="header-top__search_input"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+      </div>
+      <div class="container">
         <div class="header-bottom">
           <div class="header-bottom__statue">
             <img
@@ -164,29 +222,32 @@
         <div class="main-top">
           <span class="main-top__destinations">Destinations</span>
           <div class="main-top__nav">
-            <img
-              class="main-top__nav_home"
-              src="img/home.svg"
-              alt="Icon: home"
-            />
-            <span class="main-top__nav_home_text">Back to main</span>
-            <div class="main-top__nav_prev">
+            <a href="index.html" class="main-top__nav_link"
+              ><img
+                class="main-top__nav_home"
+                src="img/home.svg"
+                alt="Icon: home"
+              />
+              <span class="main-top__nav_home_text">Back to main</span></a
+            >
+
+            <a href="#" class="main-top__nav_prev">
               <img
                 class="main-top__nav_prev-arrow"
                 src="img/arrow-prev.svg"
                 alt="Icon: arrow-prev"
               />
               <span class="main-top__nav_prev_span">Prev</span>
-            </div>
+            </a>
             <!-- /.main-top__prev -->
-            <div class="main-top__nav_next">
+            <a href="#" class="main-top__nav_next">
               <span class="main-top__nav_next_span">Next</span>
               <img
                 class="main-top__nav_next-arrow"
                 src="img/arrow-next.svg"
                 alt="Icon: arrow-next"
               />
-            </div>
+            </a>
             <!-- /.main-top__next -->
           </div>
           <!-- /.main-top__nav -->
@@ -341,21 +402,21 @@
             class="doc-slider__next"
           />
         </div>
-      </div>
-      <div class="doc-slider__info container">
-        <span class="doc-slider__info_text"
-          >Geostatistics deal with quantitative data analysis, specifically the
-          application of statistical methodology</span
-        >
-        <div class="doc-slider__info_user">
-          <img
-            src="img/slider-user.jpg"
-            alt="Img: user"
-            class="doc-slider__info_user_img"
-          />
-          <div class="doc-slider__info_date">
-            <span class="doc-slider__info_date_name">Andrew Washington</span>
-            <span class="doc-slider__info_date_hobby">Photographer</span>
+        <div class="doc-slider__info container">
+          <span class="doc-slider__info_text"
+            >Geostatistics deal with quantitative data analysis, specifically
+            the application of statistical methodology</span
+          >
+          <div class="doc-slider__info_user">
+            <img
+              src="img/slider-user.jpg"
+              alt="Img: user"
+              class="doc-slider__info_user_img"
+            />
+            <div class="doc-slider__info_date">
+              <span class="doc-slider__info_date_name">Andrew Washington</span>
+              <span class="doc-slider__info_date_hobby">Photographer</span>
+            </div>
           </div>
         </div>
       </div>
@@ -368,23 +429,6 @@
           Assyria, Urartu and several cities, in turn surrounded by a "bitter
           river" (Oceanus), with seven islands arranged around it so as to form
           a seven-pointed star.
-        </p>
-        <p class="doc-date__text">
-          The accompanying text mentions seven outer regions beyond the
-          encircling ocean. The descriptions of five of them have survived. In
-          contrast to the Imago Mundi, an earlier Babylonian world map dating
-          back to the 9th century BC depicted Babylon as being further north
-          from the center of the world, though it is not certain what that
-          center was supposed to represent.
-        </p>
-        <p class="doc-date__text">
-          The ideas of Anaximander: considered by later Greek writers to be the
-          true founder of geography, come to us through fragments quoted by his
-          successors. Anaximander is credited with the invention of the gnomon,
-          the simple, yet efficient Greek instrument that allowed the early
-          measurement of latitude. Thales is also credited with the prediction
-          of eclipses. The foundations of geography can be traced to the ancient
-          cultures, such as the ancient, medieval, and early modern Chinese.
         </p>
         <div class="doc-card">
           <h3 class="doc-card__title">Material on Theme</h3>
@@ -416,6 +460,23 @@
             <span class="doc-card__info_icon_text">102</span>
           </div>
         </div>
+        <p class="doc-date__text">
+          The accompanying text mentions seven outer regions beyond the
+          encircling ocean. The descriptions of five of them have survived. In
+          contrast to the Imago Mundi, an earlier Babylonian world map dating
+          back to the 9th century BC depicted Babylon as being further north
+          from the center of the world, though it is not certain what that
+          center was supposed to represent.
+        </p>
+        <p class="doc-date__text">
+          The ideas of Anaximander: considered by later Greek writers to be the
+          true founder of geography, come to us through fragments quoted by his
+          successors. Anaximander is credited with the invention of the gnomon,
+          the simple, yet efficient Greek instrument that allowed the early
+          measurement of latitude. Thales is also credited with the prediction
+          of eclipses. The foundations of geography can be traced to the ancient
+          cultures, such as the ancient, medieval, and early modern Chinese.
+        </p>
         <div class="doc-comment">
           <img
             src="img/quote-article.svg"
@@ -608,6 +669,239 @@
       <!-- /.articles-wrapper container -->
     </div>
     <!-- /.articles -->
+
+    <section class="comments">
+      <div class="comments__list">
+        <div class="comments__top">
+          <div class="comments__top_name">
+            <h2 class="comments__top_title">Comments</h2>
+            <span class="comments__top_title_info">19</span>
+          </div>
+          <!-- /.comments__top_name -->
+          <button class="comments__top_button">
+            <img
+              src="img/pencil.svg"
+              alt="Icon: pencil"
+              class="comments__top_button_icon"
+            />
+            Add comment
+          </button>
+        </div>
+        <!-- /.comments__top -->
+        <div class="comments__item">
+          <img
+            src="img/comment-user1.png"
+            alt="Img: user"
+            class="comments__item_user"
+          />
+          <div class="comments__item_wrapper">
+            <div class="comments__item_info">
+              <span class="comments__item_name">Ryan Hall</span>
+              <span class="comments__item_date">July 17, 6:38 pm</span>
+            </div>
+            <!-- /.comments__item_info -->
+            <p class="comments__item_text">
+              In the event, "in places like Iraq and Jordan, leaders of the new
+              sovereign states were brought in from the outside, tailored
+              to suit colonial interests and commitments
+            </p>
+            <div class="comments__item_bottom">
+              <img
+                src="img/comment-gray.svg"
+                alt="Icon: comment"
+                class="comments__item_comment_img"
+              />
+              <span class="comments__item_comment_text">Reply</span>
+              <div class="comments__item_rating">
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_like"
+                />
+                <span
+                  class="comments__item_rating_digital comments__item_rating_digital_green"
+                  >10</span
+                >
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_dislike"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- /.comments__item_wrapper -->
+        </div>
+        <!-- /.comments__item -->
+        <div class="comments__item comments__item_answear">
+          <img
+            src="img/article-user.jpg"
+            alt="Img: user"
+            class="comments__item_user"
+          />
+          <div class="comments__item_wrapper">
+            <div class="comments__item_info">
+              <span class="comments__item_name">Lora Morrow</span>
+              <span class="comments__item_date">July 17, 6:41 pm</span>
+            </div>
+            <!-- /.comments__item_info -->
+            <p class="comments__item_text">
+              Likewise, most states in the Persian Gulf were handed over to
+              those who could protect and safeguard imperial interests in the
+              post-withdrawal phase
+            </p>
+            <div class="comments__item_bottom">
+              <img
+                src="img/comment-gray.svg"
+                alt="Icon: comment"
+                class="comments__item_comment_img"
+              />
+              <span class="comments__item_comment_text">Reply</span>
+              <div class="comments__item_rating">
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_like"
+                />
+                <span class="comments__item_rating_digital">0</span>
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_dislike"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- /.comments__item_wrapper -->
+        </div>
+        <!-- /.comments__item .comments__item_answear -->
+        <div class="comments__item">
+          <img
+            src="img/comment-user2.png"
+            alt="Img: user"
+            class="comments__item_user"
+          />
+          <div class="comments__item_wrapper">
+            <div class="comments__item_info">
+              <span class="comments__item_name">Tara Stark</span>
+              <span class="comments__item_date">July 17, 6:53 pm</span>
+            </div>
+            <!-- /.comments__item_info -->
+            <p class="comments__item_text">
+              French Indochina was divided into five subdivisions: Tonkin,
+              Annam, Cochinchina, Cambodia and Laos. Cochinchina was the first
+              territory under French Control. Saigon was conquired in 1859.
+              Then, in 1887, the Indochinese Union was established.
+            </p>
+            <div class="comments__item_bottom">
+              <img
+                src="img/comment-gray.svg"
+                alt="Icon: comment"
+                class="comments__item_comment_img"
+              />
+              <span class="comments__item_comment_text">Reply</span>
+              <div class="comments__item_rating">
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_like"
+                />
+                <span
+                  class="comments__item_rating_digital comments__item_rating_digital_red"
+                  >3</span
+                >
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_dislike"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- /.comments__item_wrapper -->
+        </div>
+        <!-- /.comments__item -->
+        <div class="comments__item">
+          <img
+            src="img/comment-user3.png"
+            alt="Img: user"
+            class="comments__item_user"
+          />
+          <div class="comments__item_wrapper">
+            <div class="comments__item_info">
+              <span class="comments__item_name">Kris Robertson</span>
+              <span class="comments__item_date">July 17, 7:12 pm</span>
+            </div>
+            <!-- /.comments__item_info -->
+            <p class="comments__item_text">
+              Indian Marxist scholar Vivek Chibber has critiqued some
+              foundational logics of Postcolonial Theory in his book
+              Postcolonial Theory and the Specter of Capital
+            </p>
+            <div class="comments__item_bottom">
+              <img
+                src="img/comment-gray.svg"
+                alt="Icon: comment"
+                class="comments__item_comment_img"
+              />
+              <span class="comments__item_comment_text">Reply</span>
+              <div class="comments__item_rating">
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_like"
+                />
+                <span class="comments__item_rating_digital">0</span>
+                <img
+                  src="img/thumb.svg"
+                  alt="Icon: thumb"
+                  class="comments__item_dislike"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- /.comments__item_wrapper -->
+        </div>
+        <!-- /.comments__item -->
+        <div class="comments__load">
+          <img
+            src="img/loading.svg"
+            alt="Icon: loading"
+            class="comments__load_img"
+          />
+          <span class="comments__load_text">Load more</span>
+        </div>
+      </div>
+      <!-- /.comments__list -->
+      <div class="comments__user">
+        <h3 class="comments__user_title">What do you think?</h3>
+        <div class="comments__user_body">
+          <img
+            src="img/comments__user.png"
+            alt="Img: user"
+            class="comments__user_img"
+          />
+
+          <form id="add-comment" class="comments__user_form" required>
+            <textarea
+              class="comments__user_textarea"
+              name="message"
+              placeholder
+            ></textarea>
+            <button class="comments__user_button">
+              Submit<img
+                src="img/arrow-next.svg"
+                alt="Img: arrow"
+                class="comments__user_img_arrow"
+              />
+            </button>
+          </form>
+        </div>
+        <!-- /.comments__user_body -->
+      </div>
+      <!-- /.comments__user -->
+    </section>
+    <!-- /.comments -->
 
     <div class="subscribe">
       <h2 class="subscribe__title">Subscribe now and get 20% off</h2>

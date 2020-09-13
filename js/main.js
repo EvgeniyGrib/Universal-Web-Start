@@ -49,7 +49,7 @@ new Swiper(".doc-slider__container", {
   keyboard: { enabled: !0, onlyInViewport: !1 },
   effect: "coverflow",
 });
-// BOOKMARK
+// ========== BOOKMARK ==========
 let bookmark = function () {
   let flag = document.querySelectorAll(".flag");
   flag.forEach((item) => {
@@ -59,3 +59,23 @@ let bookmark = function () {
   });
 };
 bookmark();
+// ========== MENU ==========
+document
+  .querySelector(".header-top__menu")
+  .addEventListener("click", function () {
+    document
+      .querySelector(".header-top__menu_active")
+      .classList.toggle("header-top__menu_visible");
+  });
+
+// =========== SEARCH ============
+document
+  .querySelector(".header-top__search_active")
+  .addEventListener("click", function () {
+    document
+      .querySelector(".header-top__search_visible")
+      .classList.toggle("header-top__search_toggle");
+    document
+      .querySelector(".header-bottom")
+      .classList.toggle("header-bottom__toggle");
+  });

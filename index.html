@@ -14,62 +14,122 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <div class="header-top__menu">
-            <img
-              class="header-top__menu_icon"
-              src="img/hamburger_menu.svg"
-              alt="Icon: menu"
-            />
-            <span class="header-top__menu_span">Sections</span>
-          </div>
-          <!-- /.header-top__menu -->
+    <header class="header lock-padding">
+      <div class="header-top">
+        <div class="header-top__menu">
+          <button
+            class="header-top__menu_icon menu-button menu__button navbar-top__menu-button"
+          >
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+          <span class="header-top__menu_span">Sections</span>
+        </div>
+        <!-- /.header-top__menu -->
+        <!-- ========== MENU ========== -->
+        <div class="header-top__menu_active">
+          <ul class="header-top__menu_list">
+            <li class="header-top__menu_li">
+              <a class="header-nav__a" href="#">News</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Science</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Opinion</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Life</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Travel</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Moneys</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Art & Design</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Sports</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">People</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Health</a>
+            </li>
+            <li class="header-top__menu_li">
+              <a class="header-top__menu_link" href="#">Education</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top__search_active">
+          <img
+            class="header-top__search_icon"
+            src="img/search.svg"
+            alt="Icon: search"
+          />
+        </div>
+        <div class="header-top__search">
+          <img
+            class="header-top__search_icon"
+            src="img/search.svg"
+            alt="Icon: search"
+          />
+          <input
+            class="header-top__search_input"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+        <!-- /.header-top__search -->
+        <div class="header-top__subscribe">
+          <a href="article.html" class="header-top__subscribe_link"
+            ><img
+              class="header-top__subscribe_img"
+              src="img/image-header.jpg"
+              alt="Image: subscribe"
+          /></a>
 
-          <div class="header-top__search">
-            <img
-              class="header-top__search_icon"
-              src="img/search.svg"
-              alt="Icon: search"
-            />
-            <input
-              class="header-top__search_input"
-              type="text"
-              placeholder="Search"
-            />
+          <div class="header-top__subscribe_spans">
+            <a href="article.html" class="header-top__subscribe_subscribe"
+              >Subscribe Now</a
+            >
+            <a href="article.html" class="header-top__subscribe_price"
+              >3 month for $19</a
+            >
           </div>
-          <!-- /.header-top__search -->
-          <div class="header-top__subscribe">
+          <div class="header-top__come">
             <a href="#"
               ><img
-                class="header-top__subscribe_img"
-                src="img/image-header.jpg"
-                alt="Image: subscribe"
+                class="header-top__come_img"
+                src="img/man.svg"
+                alt="Icon: man"
             /></a>
-
-            <div class="header-top__subscribe_spans">
-              <a href="#" class="header-top__subscribe_subscribe"
-                >Subscribe Now</a
-              >
-              <a href="#" class="header-top__subscribe_price"
-                >3 month for $19</a
-              >
-            </div>
-            <div class="header-top__come">
-              <a href="#"
-                ><img
-                  class="header-top__come_img"
-                  src="img/man.svg"
-                  alt="Icon: man"
-              /></a>
-              <a href="#" class="header-top__come_span">Sign In</a>
-            </div>
-            <!-- /.header-top__come -->
+            <a href="#" class="header-top__come_span">Sign In</a>
           </div>
-          <!-- /.header-top__subscribe -->
+          <!-- /.header-top__come -->
         </div>
-        <!-- /.header-top -->
+        <!-- /.header-top__subscribe -->
+      </div>
+      <!-- /.header-top -->
+      <div class="header-top__search header-top__search_visible">
+        <div class="header-top__search_visible_wrapper">
+          <img
+            class="header-top__search_icon"
+            src="img/search.svg"
+            alt="Icon: search"
+          />
+          <input
+            class="header-top__search_input"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+      </div>
+      <div class="container">
         <div class="header-bottom">
           <div class="header-bottom__statue">
             <img
@@ -211,9 +271,9 @@
               </div>
               <!-- /.recomended-images__man -->
               <span class="recomended-images__destinations">Destinations</span>
-              <h1 class="recomended-images__title">
+              <h2 class="recomended-images__title">
                 In Southeast England, White Cliffs and Fish
-              </h1>
+              </h2>
               <div class="recomended-images__more">
                 <a href="article.html"
                   ><div class="recomended-images__button">
@@ -223,7 +283,7 @@
                       alt="Icon: arrow"
                     /></div
                 ></a>
-                <div class="recomended-images__play">
+                <a href="#popup" class="recomended-images__play popup-link">
                   <img
                     class="recomended-images__play_icon"
                     src="img/play-white.svg"
@@ -235,7 +295,7 @@
                     >
                     <span class="recomended-images__play_info_time">18:05</span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="recomended-images__cars recomended-image">
@@ -256,9 +316,9 @@
               </div>
               <!-- /.recomended-images__man -->
               <span class="recomended-images__destinations">Destinations</span>
-              <h1 class="recomended-images__title">
+              <h2 class="recomended-images__title">
                 In Southeast England, White Cliffs and Fish
-              </h1>
+              </h2>
               <div
                 class="recomended-images__more recomended-images__more_dontplay"
               >
@@ -290,9 +350,9 @@
               </div>
               <!-- /.recomended-images__man -->
               <span class="recomended-images__destinations">Destinations</span>
-              <h1 class="recomended-images__title">
+              <h2 class="recomended-images__title">
                 In Southeast England, White Cliffs and Fish
-              </h1>
+              </h2>
               <div
                 class="recomended-images__more recomended-images__more_dontplay"
               >
@@ -324,9 +384,9 @@
               </div>
               <!-- /.recomended-images__man -->
               <span class="recomended-images__destinations">Destinations</span>
-              <h1 class="recomended-images__title">
+              <h2 class="recomended-images__title">
                 In Southeast England, White Cliffs and Fish
-              </h1>
+              </h2>
               <div class="recomended-images__more">
                 <a href="article.html"
                   ><div class="recomended-images__button">
@@ -336,7 +396,7 @@
                       alt="Icon: arrow"
                     /></div
                 ></a>
-                <div class="recomended-images__play">
+                <a href="#popup" class="recomended-images__play popup-link">
                   <img
                     class="recomended-images__play_icon"
                     src="img/play-white.svg"
@@ -348,7 +408,7 @@
                     >
                     <span class="recomended-images__play_info_time">18:05</span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="recomended-images__tech recomended-image">
@@ -369,9 +429,9 @@
               </div>
               <!-- /.recomended-images__man -->
               <span class="recomended-images__destinations">Destinations</span>
-              <h1 class="recomended-images__title">
+              <h2 class="recomended-images__title">
                 In Southeast England, White Cliffs and Fish
-              </h1>
+              </h2>
               <div
                 class="recomended-images__more recomended-images__more_dontplay"
               >
@@ -806,13 +866,13 @@
           The Big Bloom or «How Flowering Plants Changed the World»
         </h1>
         <a href="article.html"
-          ><button class="info__button">
+          ><div class="info__button">
             Read more
             <img
               class="info__button_arrow"
               src="img/arrow.svg"
               alt="Icon: arrow"
-            /></button
+            /></div
         ></a>
       </div>
       <!-- /.container -->
@@ -821,6 +881,15 @@
     <section class="news container">
       <div class="news-info">
         <div class="news-info__item">
+          <div class="news-info__item_mobile">
+            <span class="news-info__item_name news-info__item_name1"
+              >Flights</span
+            >
+            <h2 class="news-info__item_title news-info__item_mobile_title">
+              Passengers Suffer as Crowded Field Puts Pressure on Europe’s
+              Airlines
+            </h2>
+          </div>
           <img
             class="news-info__item_img"
             src="img/news-info1.jpg"
@@ -828,7 +897,8 @@
           />
           <div class="news-info__item_info">
             <div class="news-info__item_top">
-              <span class="news-info__item_name news-info__item_name1"
+              <span
+                class="news-info__item_name news-info__item_name1 news-info__item_desctop"
                 >Flights</span
               >
               <svg
@@ -847,7 +917,7 @@
               </svg>
             </div>
             <!-- /.news-info__item_top -->
-            <h2 class="news-info__item_title">
+            <h2 class="news-info__item_title news-info__item_desctop">
               Passengers Suffer as Crowded Field Puts Pressure on Europe’s
               Airlines
             </h2>
@@ -896,6 +966,13 @@
         </div>
         <!-- /.news-info__item -->
         <div class="news-info__item">
+          <div class="news-info__item_mobile">
+            <span class="news-info__item_name news-info__item_name2">Food</span>
+            <h2 class="news-info__item_title news-info__item_mobile_title">
+              Three Courses, 20 Euros: The Affordable Dining Renaissance in
+              Paris
+            </h2>
+          </div>
           <img
             class="news-info__item_img"
             src="img/news-info2.jpg"
@@ -903,7 +980,8 @@
           />
           <div class="news-info__item_info">
             <div class="news-info__item_top">
-              <span class="news-info__item_name news-info__item_name2"
+              <span
+                class="news-info__item_name news-info__item_name2 news-info__item_desctop"
                 >Food</span
               >
               <svg
@@ -922,7 +1000,7 @@
               </svg>
             </div>
             <!-- /.news-info__item_top -->
-            <h2 class="news-info__item_title">
+            <h2 class="news-info__item_title news-info__item_desctop">
               Three Courses, 20 Euros: The Affordable Dining Renaissance in
               Paris
             </h2>
@@ -971,6 +1049,14 @@
         </div>
         <!-- /.news-info__item -->
         <div class="news-info__item">
+          <div class="news-info__item_mobile">
+            <span class="news-info__item_name news-info__item_name3"
+              >Science</span
+            >
+            <h2 class="news-info__item_title news-info__item_mobile_title">
+              Watch the High-Flying Physics of a Plant’s Exploding Fruits
+            </h2>
+          </div>
           <img
             class="news-info__item_img"
             src="img/news-info3.jpg"
@@ -978,7 +1064,8 @@
           />
           <div class="news-info__item_info">
             <div class="news-info__item_top">
-              <span class="news-info__item_name news-info__item_name3"
+              <span
+                class="news-info__item_name news-info__item_name3 news-info__item_desctop"
                 >Science</span
               >
               <svg
@@ -997,7 +1084,7 @@
               </svg>
             </div>
             <!-- /.news-info__item_top -->
-            <h2 class="news-info__item_title">
+            <h2 class="news-info__item_title news-info__item_desctop">
               Watch the High-Flying Physics of a Plant’s Exploding Fruits
             </h2>
             <p class="news-info__item_text">
@@ -1045,6 +1132,14 @@
         </div>
         <!-- /.news-info__item -->
         <div class="news-info__item">
+          <div class="news-info__item_mobile">
+            <span class="news-info__item_name news-info__item_name4"
+              >Health</span
+            >
+            <h2 class="news-info__item_title news-info__item_mobile_title">
+              How the Shape of Your Ears Affects What You Hear
+            </h2>
+          </div>
           <img
             class="news-info__item_img"
             src="img/news-info4.jpg"
@@ -1052,7 +1147,8 @@
           />
           <div class="news-info__item_info">
             <div class="news-info__item_top">
-              <span class="news-info__item_name news-info__item_name4"
+              <span
+                class="news-info__item_name news-info__item_name4 news-info__item_desctop"
                 >Health</span
               >
               <svg
@@ -1071,7 +1167,7 @@
               </svg>
             </div>
             <!-- /.news-info__item_top -->
-            <h2 class="news-info__item_title">
+            <h2 class="news-info__item_title news-info__item_desctop">
               How the Shape of Your Ears Affects What You Hear
             </h2>
             <p class="news-info__item_text">
@@ -1119,6 +1215,15 @@
         </div>
         <!-- /.news-info__item -->
         <div class="news-info__item">
+          <div class="news-info__item_mobile">
+            <span class="news-info__item_name news-info__item_name5"
+              >Science</span
+            >
+            <h2 class="news-info__item_title news-info__item_mobile_title">
+              Forests Protect the Climate. A Future With More Storms Would Mean
+              Trouble.
+            </h2>
+          </div>
           <img
             class="news-info__item_img"
             src="img/news-info5.jpg"
@@ -1126,7 +1231,8 @@
           />
           <div class="news-info__item_info">
             <div class="news-info__item_top">
-              <span class="news-info__item_name news-info__item_name5"
+              <span
+                class="news-info__item_name news-info__item_name5 news-info__item_desctop"
                 >Science</span
               >
               <svg
@@ -1145,7 +1251,7 @@
               </svg>
             </div>
             <!-- /.news-info__item_top -->
-            <h2 class="news-info__item_title">
+            <h2 class="news-info__item_title news-info__item_desctop">
               Forests Protect the Climate. A Future With More Storms Would Mean
               Trouble.
             </h2>
@@ -1194,6 +1300,15 @@
         </div>
         <!-- /.news-info__item -->
         <div class="news-info__item">
+          <div class="news-info__item_mobile">
+            <span class="news-info__item_name news-info__item_name6"
+              >Art & Design</span
+            >
+            <h2 class="news-info__item_title news-info__item_mobile_title">
+              New Contemporary Institute Reverberates in Richmond’s Historic
+              Landscape
+            </h2>
+          </div>
           <img
             class="news-info__item_img"
             src="img/news-info6.jpg"
@@ -1201,7 +1316,8 @@
           />
           <div class="news-info__item_info">
             <div class="news-info__item_top">
-              <span class="news-info__item_name news-info__item_name6"
+              <span
+                class="news-info__item_name news-info__item_name6 news-info__item_desctop"
                 >Art & Design</span
               >
               <svg
@@ -1220,7 +1336,7 @@
               </svg>
             </div>
             <!-- /.news-info__item_top -->
-            <h2 class="news-info__item_title">
+            <h2 class="news-info__item_title news-info__item_desctop">
               New Contemporary Institute Reverberates in Richmond’s Historic
               Landscape
             </h2>
@@ -1412,7 +1528,7 @@
                   Readers' Choice winners: Your wine country favorites
                 </h2>
                 <a href="article.html"
-                  ><button class="describe-slider__button">
+                  ><div class="describe-slider__button">
                     <img
                       src="img/watch-photos.svg"
                       alt="Icon: photo"
@@ -1422,7 +1538,7 @@
                       >Watch photos</span
                     >
                     <span class="describe-slider__button_number">26</span>
-                  </button></a
+                  </div></a
                 >
               </div>
               <div class="swiper-slide describe-slider">
@@ -1445,7 +1561,7 @@
                   Readers' Choice winners: Your wine country favorites
                 </h2>
                 <a href="article.html"
-                  ><button class="describe-slider__button">
+                  ><div class="describe-slider__button">
                     <img
                       src="img/watch-photos.svg"
                       alt="Icon: photo"
@@ -1455,7 +1571,7 @@
                       >Watch photos</span
                     >
                     <span class="describe-slider__button_number">26</span>
-                  </button></a
+                  </div></a
                 >
               </div>
               <div class="swiper-slide describe-slider">
@@ -1478,7 +1594,7 @@
                   Readers' Choice winners: Your wine country favorites
                 </h2>
                 <a href="article.html"
-                  ><button class="describe-slider__button">
+                  ><div class="describe-slider__button">
                     <img
                       src="img/watch-photos.svg"
                       alt="Icon: photo"
@@ -1488,7 +1604,7 @@
                       >Watch photos</span
                     >
                     <span class="describe-slider__button_number">26</span>
-                  </button></a
+                  </div></a
                 >
               </div>
               <div class="swiper-slide describe-slider">
@@ -1511,7 +1627,7 @@
                   Readers' Choice winners: Your wine country favorites
                 </h2>
                 <a href="article.html"
-                  ><button class="describe-slider__button">
+                  ><div class="describe-slider__button">
                     <img
                       src="img/watch-photos.svg"
                       alt="Icon: photo"
@@ -1521,7 +1637,7 @@
                       >Watch photos</span
                     >
                     <span class="describe-slider__button_number">26</span>
-                  </button></a
+                  </div></a
                 >
               </div>
               <div class="swiper-slide describe-slider">
@@ -1544,7 +1660,7 @@
                   Readers' Choice winners: Your wine country favorites
                 </h2>
                 <a href="article.html"
-                  ><button class="describe-slider__button">
+                  ><div class="describe-slider__button">
                     <img
                       src="img/watch-photos.svg"
                       alt="Icon: photo"
@@ -1554,10 +1670,9 @@
                       >Watch photos</span
                     >
                     <span class="describe-slider__button_number">26</span>
-                  </button></a
+                  </div></a
                 >
               </div>
-              ...
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -1581,13 +1696,13 @@
               work and be authentic in your interview, experts emphasize
             </p>
             <a href="article.html"
-              ><button class="describe-info__careers_button">
+              ><div class="describe-info__careers_button">
                 Read more
                 <img
                   class="describe-info__careers_button_icon"
                   src="img/arrow.svg"
                   alt="Icon: arrow"
-                /></button
+                /></div
             ></a>
           </div>
           <div class="describe-info__cards">
@@ -1622,15 +1737,22 @@
     <!-- /.describe -->
     <div class="subscribe">
       <h2 class="subscribe__title">Subscribe now and get 20% off</h2>
-      <div class="subscribe__wrapper">
+      <form
+        action="send.php"
+        method="POST"
+        class="subscribe__wrapper form"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
         <input
-          class="subscribe__input"
           type="email"
-          placeholder="Enter your email"
+          class="subscribe__input"
+          placeholder="Your email address"
+          name="email"
           required
         />
         <button class="subscribe__button">Subscribe</button>
-      </div>
+      </form>
       <!-- /.subscribe__wrapper -->
     </div>
     <!-- /.subscribe -->
@@ -1792,7 +1914,25 @@
       </div>
       <!-- /.footer-wrapper container -->
     </footer>
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div id="ifParrent" class="popup__content">
+          <iframe
+            id="iframe"
+            class="popup__video"
+            src="https://www.youtube.com/embed/yUFm1dCIUxQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-- /.popup__content -->
+      </div>
+      <!-- /.popup__body -->
+    </div>
+    <!-- /.popup -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/popups.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

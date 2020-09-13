@@ -3,13 +3,21 @@
   &-top
     position: relative
     display: flex
-    
+    background-color: #ffffff
     border-bottom: 1px solid #D9DADB
+    max-width: 1140px
+    margin: 0 auto
     &__info
       display: flex
     &__menu
+      display: flex
+      align-items: center
       border-right: 1px solid #D9DADB
       padding: 15px 0 15px 0
+      cursor: pointer
+      &_active
+        display: none
+
       &_span
         font-family: $lato
         font-weight: 700
@@ -18,16 +26,17 @@
         color: $dark
         margin-right: 25px
       &_icon
-        margin-right: 15px
+        margin: 1px 16px 0 2px
         cursor: pointer
     &__search
       display: flex
       justify-content: flex-start
       width: 60%
       align-items: center
+      &_active
+        display: none
       &_icon
         margin-left: 25px
-        cursor: pointer
       &_input
         border: none
         margin-left: 10px
@@ -35,6 +44,8 @@
       &_input::placeholder
         color: #939699
         font-size: 14px
+      &_visible
+        display: none
     &__subscribe
       display: flex
       justify-content: flex-end
@@ -122,4 +133,22 @@
       letter-spacing: 0.5px
       text-transform: uppercase
         
-
+.menu
+  &-button
+    width: 18px
+    height: 14px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #fff
+    cursor: pointer
+    padding: 0
+    outline: none
+    &__line:nth-child(2)
+      width: 12px
+    &__line
+      width: 18px
+      height: 1px
+      background-color: #333
