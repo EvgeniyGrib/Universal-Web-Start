@@ -39,8 +39,6 @@ function popupOpen(curentPopup) {
           "afterend",
           '<iframe id="iframe" class="popup__video" src = "https://www.youtube.com/embed/yUFm1dCIUxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         );
-    } else {
-      bodyLock();
     }
     curentPopup.classList.add("open");
     curentPopup.addEventListener("click", function (e) {
@@ -55,47 +53,7 @@ function popupOpen(curentPopup) {
 function popupClose(popupActive, doUnlock = true) {
   if (unlock) {
     popupActive.classList.remove("open");
-    if (doUnlock) {
-      bodyUnLock();
-    }
   }
-}
-
-function bodyLock() {
-  const lockPaddingValue =
-    window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
-
-  if (lockPadding.length > 0) {
-    for (let index = 0; index < lockPadding.length; index++) {
-      const el = lockPadding[index];
-      el.style.paddingRight = lockPaddingValue;
-    }
-  }
-  body.style.paddingRight = lockPaddingValue;
-  body.classList.add("lock");
-
-  unlock = false;
-  setTimeout(function () {
-    unlock = true;
-  }, timeout);
-}
-
-function bodyUnLock() {
-  setTimeout(function () {
-    if (lockPadding.length > 0) {
-      for (let index = 0; index < lockPadding.length; index++) {
-        const el = lockPadding[index];
-        el.style.paddingRight = "0px";
-      }
-    }
-    body.style.paddingRight = "0px";
-    body.classList.remove("lock");
-  }, timeout);
-
-  unlock = false;
-  setTimeout(function () {
-    unlock = true;
-  }, timeout);
 }
 
 document.addEventListener("keydown", function (e) {

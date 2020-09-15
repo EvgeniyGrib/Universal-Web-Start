@@ -94,12 +94,10 @@
           /></a>
 
           <div class="header-top__subscribe_spans">
-            <a href="#subsscribe" class="header-top__subscribe_subscribe"
+            <a href="#" class="header-top__subscribe_subscribe"
               >Subscribe Now</a
             >
-            <a href="#subsscribe" class="header-top__subscribe_price"
-              >3 month for $19</a
-            >
+            <a href="#" class="header-top__subscribe_price">3 month for $19</a>
           </div>
           <div class="header-top__come">
             <a href="#"
@@ -219,7 +217,7 @@
           d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
         />
       </svg>
-      <img class="main__img" src="img/article-first1.jpg" alt="Img: moto" />
+      <img class="main__img" src="img/article-first2.jpg" alt="Img: foto" />
       <div class="main-wrapper">
         <div class="main-top">
           <span class="main-top__destinations">Destinations</span>
@@ -233,7 +231,7 @@
               <span class="main-top__nav_home_text">Back to main</span></a
             >
 
-            <a href="article1.html" class="main-top__nav_prev">
+            <a href="article.html" class="main-top__nav_prev">
               <img
                 class="main-top__nav_prev-arrow"
                 src="img/arrow-prev.svg"
@@ -242,7 +240,7 @@
               <span class="main-top__nav_prev_span">Prev</span>
             </a>
             <!-- /.main-top__prev -->
-            <a href="article1.html" class="main-top__nav_next">
+            <a href="article.html" class="main-top__nav_next">
               <span class="main-top__nav_next_span">Next</span>
               <img
                 class="main-top__nav_next-arrow"
@@ -1056,7 +1054,7 @@
             action="send.php"
             method="POST"
             id="add-comment"
-            class="comments__user_form form"
+            class="comments__user_form"
           >
             <textarea
               name="message"
@@ -1085,7 +1083,7 @@
       <form
         action="send.php"
         method="POST"
-        class="subscribe__wrapper form2"
+        class="subscribe__wrapper form"
         data-aos="fade-right"
         data-aos-delay="300"
       >
@@ -1098,7 +1096,8 @@
             required
           />
         </div>
-        <button class="subscribe__button">Subscribe</button>
+
+        <button class="subscribe__button" type="submit">Subscribe</button>
       </form>
       <!-- /.subscribe__wrapper -->
     </div>

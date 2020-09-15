@@ -89,7 +89,7 @@ document
       .querySelector(".comments__load")
       .classList.add("comments__load_none");
   });
-// Обработка форм
+// ========= Обработка форм ============
 $(".comments__user_form").validate({
   errorClass: "invalid",
   rules: {
@@ -106,7 +106,22 @@ $(".comments__user_form").validate({
   },
 });
 // Обработка форм майл
-$(".form").validate({
+$(".form1").validate({
+  errorClass: "invalid",
+  rules: {
+    email: {
+      required: true,
+      email: true,
+    },
+  },
+  messages: {
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  },
+});
+$(".form2").validate({
   errorClass: "invalid",
   rules: {
     email: {
