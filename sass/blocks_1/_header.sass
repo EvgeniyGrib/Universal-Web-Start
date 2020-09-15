@@ -1,7 +1,25 @@
 .header
   background: #FFFFFF
+  &__search
+    display: flex
+    justify-content: flex-start
+    width: 60%
+    align-items: center
+    &_active
+      display: none
+    &_icon
+      margin-left: 25px
+    &_input
+      border: none
+      margin-left: 10px
+      width: 100%
+    &_input::placeholder
+      color: #939699
+      font-size: 14px
+    &_visible
+      display: none
   &-top
-    position: relative
+    position: relative 
     display: flex
     background-color: #ffffff
     border-bottom: 1px solid #D9DADB
@@ -28,24 +46,6 @@
       &_icon
         margin: 1px 16px 0 2px
         cursor: pointer
-    &__search
-      display: flex
-      justify-content: flex-start
-      width: 60%
-      align-items: center
-      &_active
-        display: none
-      &_icon
-        margin-left: 25px
-      &_input
-        border: none
-        margin-left: 10px
-        width: 100%
-      &_input::placeholder
-        color: #939699
-        font-size: 14px
-      &_visible
-        display: none
     &__subscribe
       display: flex
       justify-content: flex-end

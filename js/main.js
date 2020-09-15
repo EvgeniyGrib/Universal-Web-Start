@@ -59,6 +59,7 @@ let bookmark = function () {
   });
 };
 bookmark();
+
 // ========== MENU ==========
 document
   .querySelector(".header-top__menu")
@@ -69,26 +70,16 @@ document
   });
 // =========== SEARCH ============
 document
-  .querySelector(".header-top__search_active")
+  .querySelector(".header__search_active")
   .addEventListener("click", function () {
     document
-      .querySelector(".header-top__search_visible")
-      .classList.toggle("header-top__search_toggle");
+      .querySelector(".header__search_visible")
+      .classList.toggle("header__search_toggle");
     document
       .querySelector(".header-bottom")
       .classList.toggle("header-bottom__toggle");
   });
-// ========== Loading comments ==========
-document
-  .querySelector(".comments__load")
-  .addEventListener("click", function () {
-    document
-      .querySelector(".comments__item_load")
-      .classList.add("comments__item_loading");
-    document
-      .querySelector(".comments__load")
-      .classList.add("comments__load_none");
-  });
+
 // ========= Обработка форм ============
 $(".comments__user_form").validate({
   errorClass: "invalid",

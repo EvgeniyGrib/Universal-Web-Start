@@ -17,9 +17,7 @@
     <header class="header lock-padding">
       <div class="header-top">
         <div class="header-top__menu">
-          <button
-            class="header-top__menu_icon menu-button menu__button navbar-top__menu-button"
-          >
+          <button class="header-top__menu_icon menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -31,7 +29,7 @@
         <div class="header-top__menu_active">
           <ul class="header-top__menu_list">
             <li class="header-top__menu_li">
-              <a class="header-nav__a" href="#">News</a>
+              <a class="header-top__menu_link" href="#">News</a>
             </li>
             <li class="header-top__menu_li">
               <a class="header-top__menu_link" href="#">Science</a>
@@ -65,28 +63,28 @@
             </li>
           </ul>
         </div>
-        <div class="header-top__search_active">
+        <div class="header__search_active">
           <img
-            class="header-top__search_icon"
+            class="header__search_icon"
             src="img/search.svg"
             alt="Icon: search"
           />
         </div>
-        <div class="header-top__search">
+        <div class="header__search">
           <img
-            class="header-top__search_icon"
+            class="header__search_icon"
             src="img/search.svg"
             alt="Icon: search"
           />
           <input
-            class="header-top__search_input"
+            class="header__search_input"
             type="text"
             placeholder="Search"
           />
         </div>
         <!-- /.header-top__search -->
         <div class="header-top__subscribe">
-          <a href="#" class="header-top__subscribe_link"
+          <a href="article.html" class="header-top__subscribe_link"
             ><img
               class="header-top__subscribe_img"
               src="img/image-header.jpg"
@@ -94,10 +92,12 @@
           /></a>
 
           <div class="header-top__subscribe_spans">
-            <a href="#" class="header-top__subscribe_subscribe"
+            <a href="article.html" class="header-top__subscribe_subscribe"
               >Subscribe Now</a
             >
-            <a href="#" class="header-top__subscribe_price">3 month for $19</a>
+            <a href="article.html" class="header-top__subscribe_price"
+              >3 month for $19</a
+            >
           </div>
           <div class="header-top__come">
             <a href="#"
@@ -113,15 +113,15 @@
         <!-- /.header-top__subscribe -->
       </div>
       <!-- /.header-top -->
-      <div class="header-top__search header-top__search_visible">
-        <div class="header-top__search_visible_wrapper">
+      <div class="header__search header__search_visible">
+        <div class="header__search_visible_wrapper">
           <img
-            class="header-top__search_icon"
+            class="header__search_icon"
             src="img/search.svg"
             alt="Icon: search"
           />
           <input
-            class="header-top__search_input"
+            class="header__search_input"
             type="text"
             placeholder="Search"
           />
@@ -288,7 +288,7 @@
             </div>
           </div>
 
-          <div class="main-bottom__button">
+          <div class="main-bottom__button button">
             <img
               src="img/share.svg"
               alt="Icon: share"
@@ -391,14 +391,16 @@
             <!-- Slides -->
             <div class="swiper-slide doc-slider__slide">
               <img
-                src="img/doc-slider.jpg"
+                src="#"
+                data-src="img/doc-slider.jpg"
                 alt="Img: foto"
                 class="doc-slider__img"
               />
             </div>
             <div class="swiper-slide doc-slider__slide">
               <img
-                src="img/doc-slider.jpg"
+                src="#"
+                data-src="img/doc-slider.jpg"
                 alt="Img: foto"
                 class="doc-slider__img"
               />
@@ -430,7 +432,8 @@
           >
           <div class="doc-slider__info_user">
             <img
-              src="img/slider-user.jpg"
+              src="#"
+              data-src="img/slider-user.jpg"
               alt="Img: user"
               class="doc-slider__info_user_img"
             />
@@ -456,7 +459,8 @@
             <h3 class="doc-card__title">Material on Theme</h3>
             <img
               class="doc-card__img"
-              src="img/doc-card.jpg"
+              src="#"
+              data-src="img/doc-card.jpg"
               alt="Img: picture"
             />
           </div>
@@ -516,7 +520,8 @@
           >
           <div class="doc-comment__user">
             <img
-              src="img/doc-user-comment.png"
+              src="#"
+              data-src="img/doc-user-comment.png"
               alt="Img: user"
               class="doc-comment__user_img"
             />
@@ -594,7 +599,8 @@
       <div class="articles-wrapper">
         <div class="articles-item">
           <img
-            src="img/articles-img1.jpg"
+            src="#"
+            data-src="img/articles-img1.jpg"
             alt="Img: foto"
             class="articles-item__img"
           />
@@ -605,7 +611,7 @@
             <img
               src="img/eye.svg"
               alt="Icon: eye"
-              class="doc-card__info_icon"
+              class="articles-item__info_icon"
             />
             <span class="articles-item__info_icon_text">1,904</span>
             <img
@@ -619,7 +625,8 @@
         <!-- /.articles-item -->
         <div class="articles-item">
           <img
-            src="img/articles-img2.jpg"
+            src="#"
+            data-src="img/articles-img2.jpg"
             alt="Img: foto"
             class="articles-item__img"
           />
@@ -630,7 +637,7 @@
             <img
               src="img/eye.svg"
               alt="Icon: eye"
-              class="doc-card__info_icon"
+              class="articles-item__info_icon"
             />
             <span class="articles-item__info_icon_text">2,873</span>
             <img
@@ -644,7 +651,8 @@
         <!-- /.articles-item -->
         <div class="articles-item">
           <img
-            src="img/articles-img3.jpg"
+            src="#"
+            data-src="img/articles-img3.jpg"
             alt="Img: foto"
             class="articles-item__img"
           />
@@ -655,7 +663,7 @@
             <img
               src="img/eye.svg"
               alt="Icon: eye"
-              class="doc-card__info_icon"
+              class="articles-item__info_icon"
             />
             <span class="articles-item__info_icon_text">821</span>
             <img
@@ -669,7 +677,8 @@
         <!-- /.articles-item -->
         <div class="articles-item">
           <img
-            src="img/articles-img4.jpg"
+            src="#"
+            data-src="img/articles-img4.jpg"
             alt="Img: foto"
             class="articles-item__img"
           />
@@ -680,7 +689,7 @@
             <img
               src="img/eye.svg"
               alt="Icon: eye"
-              class="doc-card__info_icon"
+              class="articles-item__info_icon"
             />
             <span class="articles-item__info_icon_text">5,030</span>
             <img
@@ -705,7 +714,7 @@
             <span class="comments__top_title_info">19</span>
           </div>
           <!-- /.comments__top_name -->
-          <button class="comments__top_button">
+          <button class="comments__top_button button">
             <img
               src="img/pencil.svg"
               alt="Icon: pencil"
@@ -717,7 +726,8 @@
         <!-- /.comments__top -->
         <div class="comments__item">
           <img
-            src="img/comment-user1.png"
+            src="#"
+            data-src="img/comment-user1.png"
             alt="Img: user"
             class="comments__item_user"
           />
@@ -762,7 +772,8 @@
         <!-- /.comments__item -->
         <div class="comments__item comments__item_answear">
           <img
-            src="img/article-user.jpg"
+            src="#"
+            data-src="img/article-user.jpg"
             alt="Img: user"
             class="comments__item_user"
           />
@@ -804,7 +815,8 @@
         <!-- /.comments__item .comments__item_answear -->
         <div class="comments__item">
           <img
-            src="img/comment-user2.png"
+            src="#"
+            data-src="img/comment-user2.png"
             alt="Img: user"
             class="comments__item_user"
           />
@@ -850,7 +862,8 @@
         <!-- /.comments__item -->
         <div class="comments__item">
           <img
-            src="img/comment-user3.png"
+            src="#"
+            data-src="img/comment-user3.png"
             alt="Img: user"
             class="comments__item_user"
           />
@@ -1031,7 +1044,7 @@
           <!-- /.comments__item -->
         </div>
 
-        <div class="comments__load">
+        <div class="comments__load" id="load">
           <img
             src="img/loading.svg"
             alt="Icon: loading"
@@ -1045,7 +1058,8 @@
         <h3 class="comments__user_title">What do you think?</h3>
         <div class="comments__user_body">
           <img
-            src="img/comments__user.png"
+            src="#"
+            data-src="img/comments__user.png"
             alt="Img: user"
             class="comments__user_img"
           />
@@ -1054,16 +1068,15 @@
             action="send.php"
             method="POST"
             id="add-comment"
-            class="comments__user_form"
+            class="comments__user_form form"
           >
             <textarea
               name="message"
-              type="message"
               class="comments__user_textarea"
               placeholder=""
               required
             ></textarea>
-            <button class="comments__user_button">
+            <button class="comments__user_button button">
               Submit<img
                 src="img/arrow-next.svg"
                 alt="Img: arrow"
@@ -1083,7 +1096,7 @@
       <form
         action="send.php"
         method="POST"
-        class="subscribe__wrapper form"
+        class="subscribe__wrapper form2"
         data-aos="fade-right"
         data-aos-delay="300"
       >
@@ -1096,8 +1109,7 @@
             required
           />
         </div>
-
-        <button class="subscribe__button" type="submit">Subscribe</button>
+        <button class="subscribe__button button">Subscribe</button>
       </form>
       <!-- /.subscribe__wrapper -->
     </div>
@@ -1263,6 +1275,8 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/jquery.lazyloadxt.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
