@@ -6,7 +6,7 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $email = $_POST['email'];
-
+$message = $_POST['message'];
 
 // Формирование самого письма
 $title = "Uneversal";
@@ -19,6 +19,10 @@ $myMail = "
 <h2>Letter receipt report</h2>
 <b>Successful email sending</b><br>
 <b>email address of the recipient of the newsletter: $email</b>
+";
+$messageUser = "
+<h2>New message from user</h2>
+<b>$message</b>
 ";
 
 // Настройки PHPMailer
@@ -39,19 +43,19 @@ try {
     $mail->setFrom('gribevgenij779@gmail.com', 'Universal company'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress($email);  
+    // $mail->addAddress($email);  
     $mail->addAddress('evg.grib@mail.ru'); // Ещё один, если нужен
 
 // Отправка сообщения
-if ($mail->addAddress($email)) {
-    $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;
-} else {
+if ($email != null) {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $myMail;
-} 
+} elseif ($message != null){
+    $mail->isHTML(true);
+    $mail->Subject = $title;
+    $mail->Body = $messageUser;
+}
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 

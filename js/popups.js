@@ -33,6 +33,12 @@ function popupOpen(curentPopup) {
     const popupActive = document.querySelector(".popup");
     if (popupActive) {
       popupClose(popupActive, false);
+      document
+        .getElementById("ifParrent")
+        .insertAdjacentHTML(
+          "afterend",
+          '<iframe id="iframe" class="popup__video" src = "https://www.youtube.com/embed/yUFm1dCIUxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        );
     } else {
       bodyLock();
     }
@@ -41,12 +47,6 @@ function popupOpen(curentPopup) {
       if (!e.target.closest(".popup__content")) {
         popupClose(e.target.closest(".popup"));
         document.getElementById("iframe").remove();
-        document
-          .getElementById("ifParrent")
-          .insertAdjacentHTML(
-            "afterend",
-            '<iframe id="iframe" class="popup__video" src = "https://www.youtube.com/embed/yUFm1dCIUxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-          );
       }
     });
   }

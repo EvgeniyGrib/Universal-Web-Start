@@ -67,7 +67,6 @@ document
       .querySelector(".header-top__menu_active")
       .classList.toggle("header-top__menu_visible");
   });
-
 // =========== SEARCH ============
 document
   .querySelector(".header-top__search_active")
@@ -79,3 +78,46 @@ document
       .querySelector(".header-bottom")
       .classList.toggle("header-bottom__toggle");
   });
+// ========== Loading comments ==========
+document
+  .querySelector(".comments__load")
+  .addEventListener("click", function () {
+    document
+      .querySelector(".comments__item_load")
+      .classList.add("comments__item_loading");
+    document
+      .querySelector(".comments__load")
+      .classList.add("comments__load_none");
+  });
+// Обработка форм
+$(".comments__user_form").validate({
+  errorClass: "invalid",
+  rules: {
+    message: {
+      required: true,
+      minlength: 100,
+    },
+  },
+  messages: {
+    message: {
+      required: "Please, enter your message",
+      minlength: "Your message must be 100 characters long",
+    },
+  },
+});
+// Обработка форм майл
+$(".form").validate({
+  errorClass: "invalid",
+  rules: {
+    email: {
+      required: true,
+      email: true,
+    },
+  },
+  messages: {
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  },
+});

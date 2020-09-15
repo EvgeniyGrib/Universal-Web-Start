@@ -2,7 +2,7 @@
   cursor: pointer
   position: absolute
   top: 151px
-  left: 195px
+  left: 117px
   width: 21px
   height: 27px
 .main 
@@ -47,13 +47,13 @@
         align-items: center
         &_span
           color: #ffffff
-          margin-left: 5px
+          margin-left: 8px
       &_next
         display: flex
         align-items: center
         &_span
           color: #ffffff
-          margin-right: 5px
+          margin-right: 10px
   &__title
     width: 750px
     font-family: Roboto Slab
@@ -61,6 +61,7 @@
     font-weight: bold
     font-size: 55px
     line-height: 70px
+    letter-spacing: -0.2px
     margin-bottom: 32px
   &__text
     width: 556px
@@ -71,6 +72,11 @@
   &-bottom
     display: flex
     align-items: center
+    &__list
+      display: flex
+    &__item
+      display: flex
+      align-items: center
     &__time
       opacity: 0.4
       margin-right: 7px
@@ -98,8 +104,8 @@
     &__button
       cursor: pointer
       padding: 9px 24px 9px 18px
-      border: 1px solid rgba(255, 255, 255, 0.4);;
-      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.4)
+      border-radius: 20px
       &_img
         margin-right: 10px
         &_text
@@ -115,11 +121,23 @@
     border: 1px solid #D9DADB
     position: absolute
     top: 490px
-    right: 286px
+    right: 15.45%
     &__info
       display: flex
       flex-direction: column
       align-items: center
+      &_user
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_text
+          display: flex
+          flex-direction: column
+          align-items: center
+      &_article
+        display: flex
+        flex-direction: column
+        align-items: center
       &_img
         width: 90px
         height: 90px
