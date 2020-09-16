@@ -28,7 +28,7 @@
           margin-right: 13px
     &-cats
       &__title
-        padding: 25px
+        padding: 8px 20px
     &-columns
       &__title 
         font-size: 18px
@@ -71,7 +71,7 @@
           text-overflow: ellipsis
         &_img
           object-fit: cover
-          width: 250px
+          width: 300px
   .describe
     &-slider
       &__title 
@@ -163,7 +163,7 @@
         font-size: 12px
         line-height: 16px
   .review 
-    grid-template: 370px 170px 170px 100%/repeat(3, 30%)
+    grid-template: 370px 170px 170px 1fr / repeat(3, 30%)
     &-card
       &__title
         width: 170px
@@ -174,7 +174,10 @@
     &-columns
       grid-area: 4 / 1 / 5 / 4
       width: 100%
+      height: 582px
       margin: 0 auto
+      &__title
+        margin-left: 30px
     &-cars
       &__comment
         &_text
@@ -262,8 +265,8 @@
   .news
     &-recomended
       width: 100%
-//  ================== max-width: 700px =================
-@media (max-width: 700px)
+//  ================== max-width: 730px =================
+@media (max-width: 730px)
   .container
     width: 88%
   .header
@@ -275,7 +278,7 @@
       padding-top: 50px
     &__search
       &_input 
-        width: 100%
+        width: 60%
     &-top
       position: fixed
       width: 100%
@@ -436,7 +439,7 @@
           margin-left: 2px
   .review
     display: flex
-    justify-content: space-between
+    justify-content: center
     flex-wrap: wrap
     &-cars
       order: -2
@@ -464,11 +467,14 @@
       width: 46%
       &__img 
         height: 70%
+      &__title
+        padding-top: 20px
     &__img
       height: 350px
       object-fit: cover
     &-columns
       width: auto
+      height: 80%
       &__title
         font-size: 22px
         line-height: 24px
@@ -579,8 +585,8 @@
         &_title
           width: 100%
 
-// ========== max-width: 522px ===========
-@media ( max-width:522px )
+// ========== max-width: 526px ===========
+@media ( max-width:526px )
   .header
     &__search
       display: none
@@ -691,7 +697,9 @@
       margin-bottom: 0
     &__input
       margin: 10px 0
-      width: 80%
+      width: 100%
+      &_wrapper
+        width: 80%
     &__button
       margin: 10px 
     &__title 
@@ -788,10 +796,30 @@
     &-cars
       &__text 
         margin-bottom: 25px
+  .subscribe
+    &__input
+      &_wrapper
+        align-items: center
 
-       
+@media(hover: hover) and (pointer: fine) 
+  .button:hover 
+    background-color: #42aaff
+  .recomended-info__item:hover
+    background-color: #dbdbdb
+  .review-card__info:hover
+    border: 1px solid #4592ff
+  .flag:hover
+    fill: #ff9baa
+  .bookmark-article:hover
+    fill: #ff9baa
+  .header-nav__a:hover
+    border-bottom: 1px solid #dbdbdb
+  .comments__load:hover
+    background-color: #42aaff
+  .footer-list__roster_item a:hover
+    margin-left: 5px
+  .footer-info__date_link:hover
+    margin-bottom: 5px
+  .footer-info__social_img:hover
+    margin-bottom: 10px
 
-
-
-// // ==========---------- max-height: 500px ---------=========
-// @media only screen and (max-height: 500px)
